@@ -1,0 +1,26 @@
+﻿@model List<Rentflix.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customer List</h2>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Membership Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {   <tr>
+                <th scope="row">@customer.Id</th>
+                <td>@Html.ActionLink(customer.Name,"Details","Customer",new { id=customer.Id},null)</td>
+                <td>@customer.MembershipType.MembershipName</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
