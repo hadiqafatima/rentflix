@@ -19,9 +19,9 @@ namespace Rentflix.Controllers.Api
             db = new ApplicationDbContext();
         }
         //GET api/customers
-        public IEnumerable<CustomerDto> GetCustomers()
+        public IHttpActionResult GetCustomers()
         {
-            return db.Customers.ToList().Select(Mapper.Map<Customer,CustomerDto>);
+            return Ok(db.Customers.ToList().Select(Mapper.Map<Customer,CustomerDto>));
         }
         //GET api/customers/1
         public IHttpActionResult GetCustomer(int id)
@@ -43,8 +43,8 @@ namespace Rentflix.Controllers.Api
             }
             var customer = Mapper.Map<CustomerDto, Customer>(customerDto);
             db.Customers.Add(customer);
-            db.SaveChanges();
             customerDto.Id = customer.Id;
+            db.SaveChanges();
             return Created(new Uri(Request.RequestUri+"/"+customer.Id),customerDto);
 
         }
