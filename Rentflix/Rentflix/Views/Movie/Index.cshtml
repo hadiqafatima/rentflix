@@ -5,6 +5,9 @@
 }
 
 <h2>Movie List</h2>
+<div class="row">
+    @Html.ActionLink("Add Movie", "New", null, new { @class="btn btn-primary", @style = "margin:15px;" })
+</div>
 <table class="table">
 <thead class="thead-dark">
     <tr>
@@ -17,7 +20,7 @@
     @foreach (var movie in Model)
     {
         <tr>
-            <td>@Html.ActionLink(movie.name,"Details","Movie",new { id = movie.Id},null)</td>
+            <td>@Html.ActionLink(movie.Name,"Edit","Movie",new { id = movie.Id},null)</td>
             <td>@movie.Genre.Name</td>
 
         </tr>

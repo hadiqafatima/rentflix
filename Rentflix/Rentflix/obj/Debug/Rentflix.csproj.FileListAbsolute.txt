@@ -125,3 +125,8 @@ c:\users\hp\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.MovieGe
 c:\users\hp\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.MovieGenreAdded1.resources
 c:\users\hp\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.MovieGenreAddedData.resources
 c:\users\hp\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.Moviefix.resources
+C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.minorGenreChange.resources
+C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.minorMovieStructChange.resources
+C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.minorMovieStructChang.resources
+C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.minorMovieStructChang1.resources
+C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.NewMigration.resources

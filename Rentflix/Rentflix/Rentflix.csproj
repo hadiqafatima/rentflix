@@ -249,6 +249,26 @@
     <Compile Include="Migrations\201812161404061_Moviefix.Designer.cs">
       <DependentUpon>201812161404061_Moviefix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812170914348_minorGenreChange.cs" />
+    <Compile Include="Migrations\201812170914348_minorGenreChange.Designer.cs">
+      <DependentUpon>201812170914348_minorGenreChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812171052492_minorMovieStructChange.cs" />
+    <Compile Include="Migrations\201812171052492_minorMovieStructChange.Designer.cs">
+      <DependentUpon>201812171052492_minorMovieStructChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812171109526_minorMovieStructChang.cs" />
+    <Compile Include="Migrations\201812171109526_minorMovieStructChang.Designer.cs">
+      <DependentUpon>201812171109526_minorMovieStructChang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812171120511_minorMovieStructChang1.cs" />
+    <Compile Include="Migrations\201812171120511_minorMovieStructChang1.Designer.cs">
+      <DependentUpon>201812171120511_minorMovieStructChang1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812180126166_NewMigration.cs" />
+    <Compile Include="Migrations\201812180126166_NewMigration.Designer.cs">
+      <DependentUpon>201812180126166_NewMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -256,9 +276,12 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -320,6 +343,8 @@
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Movie\Index.cshtml" />
     <Content Include="Views\Movie\Details.cshtml" />
+    <Content Include="Views\Customer\CustomerForm.cshtml" />
+    <Content Include="Views\Movie\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -388,6 +413,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812161404061_Moviefix.resx">
       <DependentUpon>201812161404061_Moviefix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812170914348_minorGenreChange.resx">
+      <DependentUpon>201812170914348_minorGenreChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812171052492_minorMovieStructChange.resx">
+      <DependentUpon>201812171052492_minorMovieStructChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812171109526_minorMovieStructChang.resx">
+      <DependentUpon>201812171109526_minorMovieStructChang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812171120511_minorMovieStructChang1.resx">
+      <DependentUpon>201812171120511_minorMovieStructChang1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812180126166_NewMigration.resx">
+      <DependentUpon>201812180126166_NewMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
