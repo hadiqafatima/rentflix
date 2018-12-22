@@ -130,3 +130,11 @@ C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.minorMo
 C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.minorMovieStructChang.resources
 C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.minorMovieStructChang1.resources
 C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.NewMigration.resources
+C:\Users\HP\source\repos\Rentflix\Rentflix\bin\System.Net.Http.Formatting.dll
+C:\Users\HP\source\repos\Rentflix\Rentflix\bin\System.Web.Http.dll
+C:\Users\HP\source\repos\Rentflix\Rentflix\bin\System.Web.Http.WebHost.dll
+C:\Users\HP\source\repos\Rentflix\Rentflix\bin\System.Net.Http.Formatting.xml
+C:\Users\HP\source\repos\Rentflix\Rentflix\bin\System.Web.Http.xml
+C:\Users\HP\source\repos\Rentflix\Rentflix\bin\System.Web.Http.WebHost.xml
+C:\Users\HP\source\repos\Rentflix\Rentflix\bin\AutoMapper.dll
+C:\Users\HP\source\repos\Rentflix\Rentflix\bin\AutoMapper.xml
