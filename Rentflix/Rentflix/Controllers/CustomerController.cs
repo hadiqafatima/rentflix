@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace Rentflix.Controllers
 {
+
     public class CustomerController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -20,8 +21,7 @@ namespace Rentflix.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-            List<Customer> customers = db.Customers.Include(c => c.MembershipType).ToList();
-            return View(customers);
+            return View();
         }
         public ActionResult Details(int id)
         {

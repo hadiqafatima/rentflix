@@ -4,7 +4,13 @@ using System.ComponentModel.DataAnnotations;
 namespace Rentflix.Models
 {
     public class ExternalLoginConfirmationViewModel
-    {
+    {   [Required]
+        [StringLength(255)]
+        [Display(Name="Driving Lisence")]
+        public string DrivingLisence { get; set; }
+        [Required]
+        [Range(00000000000, 99999999999)]
+        public int Phone { get; set; }
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -64,6 +70,12 @@ namespace Rentflix.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Range(00000000000, 99999999999)]
+        public int Phone { get; set; }
+        [Required]
+        [Display(Name = "Driving Lisence")]
+        public string DrivingLisence { get; set; }
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

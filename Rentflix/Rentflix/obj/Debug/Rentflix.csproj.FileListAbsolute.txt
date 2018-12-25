@@ -138,3 +138,6 @@ C:\Users\HP\source\repos\Rentflix\Rentflix\bin\System.Web.Http.xml
 C:\Users\HP\source\repos\Rentflix\Rentflix\bin\System.Web.Http.WebHost.xml
 C:\Users\HP\source\repos\Rentflix\Rentflix\bin\AutoMapper.dll
 C:\Users\HP\source\repos\Rentflix\Rentflix\bin\AutoMapper.xml
+C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.SeedUsers.resources
+C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.AddDriviingLisence.resources
+C:\Users\HP\source\repos\Rentflix\Rentflix\obj\Debug\Rentflix.Migrations.AddPhone.resources

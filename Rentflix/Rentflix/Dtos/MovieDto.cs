@@ -17,6 +17,7 @@ namespace Rentflix.Dtos
         [Range(1, 20)]
         public int NumberInStock { get; set; }
         [Required]
+        public GenreDto Genre { get; set; }
         public byte? GenreId { get; set; }
     }
 }

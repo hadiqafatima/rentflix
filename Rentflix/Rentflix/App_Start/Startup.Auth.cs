@@ -54,14 +54,14 @@ namespace Rentflix
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "352960555290506",
+               appSecret: "bbb2d54dd132bcc49f82bbd70906530a");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
-            //    ClientId = "",
-            //    ClientSecret = ""
+              //  ClientId = "741768102699-u6hjlkqdmr9tuflstn7uu21o1e0oco6b.apps.googleusercontent.com",
+              //  ClientSecret = "8mK06EW6h9h_Yp_U1bwRrVZy"
             //});
         }
     }

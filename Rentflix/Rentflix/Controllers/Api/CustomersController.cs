@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Data.Entity;
 using System.Net.Http;
 using System.Web.Http;
 using AutoMapper;
@@ -21,7 +22,10 @@ namespace Rentflix.Controllers.Api
         //GET api/customers
         public IHttpActionResult GetCustomers()
         {
-            return Ok(db.Customers.ToList().Select(Mapper.Map<Customer,CustomerDto>));
+            return Ok(db.Customers
+                .Include(c=>c.MembershipType)
+                .ToList()
+                .Select(Mapper.Map<Customer,CustomerDto>));
         }
         //GET api/customers/1
         public IHttpActionResult GetCustomer(int id)

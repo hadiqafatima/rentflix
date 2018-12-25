@@ -2,6 +2,7 @@
 using Rentflix.Dtos;
 using Rentflix.Models;
 using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -18,11 +19,13 @@ namespace Rentflix.Controllers.Api
             db = new ApplicationDbContext();
         }
         //GET api/movies
+        [Authorize]
         public IHttpActionResult GetMovies()
         {
-            return Ok(db.Movies.ToList().Select(Mapper.Map<Movie, MovieDto>));
+            return Ok(db.Movies.Include(m => m.Genre).ToList().Select(Mapper.Map<Movie, MovieDto>));
         }
         //GET api/movies/1
+        
         public IHttpActionResult GetMovie(int id)
         {
             var movie = db.Movies.Single(m => m.Id == id);

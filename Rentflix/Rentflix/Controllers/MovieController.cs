@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace Rentflix.Controllers
 {
+    
     public class MovieController : Controller
     {
         ApplicationDbContext db;
@@ -22,11 +23,17 @@ namespace Rentflix.Controllers
             db.Dispose();
         }
         // GET: Movie
+        
         public ActionResult Index()
         {
-            var movies = db.Movies.Include(m => m.Genre).ToList();
-            return View(movies);
+            if (User.IsInRole(RoleName.CanManageMovie))
+            {
+                return View("List");
+            }
+
+            return View("ReadOnlyList");
         }
+        [Authorize(Roles = RoleName.CanManageMovie)]
         public ActionResult Details(int id)
         {
             var movie = db.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
@@ -36,6 +43,8 @@ namespace Rentflix.Controllers
             }
             return View(movie);
         }
+
+        [Authorize(Roles = RoleName.CanManageMovie)]
         public ActionResult New()
         {
             var genres = db.Genres.ToList();
@@ -46,6 +55,7 @@ namespace Rentflix.Controllers
             return View("MovieForm", viewModelMovie);
 
         }
+        [Authorize(Roles = RoleName.CanManageMovie)]
         public ActionResult Edit(int id)
         {
             var movie = db.Movies.SingleOrDefault(m => m.Id == id);
@@ -61,6 +71,7 @@ namespace Rentflix.Controllers
             return View("MovieForm", viewModel);
         }
         [HttpPost]
+        [Authorize(Roles = RoleName.CanManageMovie)]
         public ActionResult Save(Movie movie)
         {
             if (!ModelState.IsValid)
